@@ -1,0 +1,22 @@
+<div class="section">
+    <div class="container cc-education">
+      <div class="h4 text-center mb-4 title">Education</div>
+      <div class="card" *ngFor="let education of educationList">
+        <div class="row">
+          <div class="col-md-3 bg-primary">
+            <div class="card-body cc-education-header">
+              <p>{{ education.date }}</p>
+              <div class="h5">{{ education.degree }}</div>
+            </div>
+          </div>
+          <div class="col-md-9">
+            <div class="card-body">
+              <div class="h5">{{ education.degree }}</div>
+              <p class="category">{{ education.institution }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

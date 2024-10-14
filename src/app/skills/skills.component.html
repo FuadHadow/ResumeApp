@@ -1,0 +1,21 @@
+<div class="section" id="skill">
+    <div class="container">
+      <div class="h4 text-center mb-4 title">Professional Skills</div>
+      <div class="card">
+        <div class="card-body">
+          <div class="row" *ngFor="let skill of skills">
+            <div class="col-md-6">
+              <div class="progress-container">
+                <span class="progress-badge">{{ skill.name }}</span>
+                <div class="progress">
+                  <div class="progress-bar" [style.width]="skill.level + '%'"></div>
+                  <span class="progress-value">{{ skill.level }}%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

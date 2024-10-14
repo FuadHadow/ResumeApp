@@ -1,0 +1,19 @@
+<div class="section" id="portfolio">
+    <div class="container">
+      <div class="h4 text-center mb-4 title">Portfolio</div>
+      <div class="row">
+        <div class="col-md-6" *ngFor="let item of portfolioItems">
+          <div class="cc-portfolio-image img-raised">
+            <figure class="cc-effect">
+              <img [src]="item.image" alt="Portfolio Image"/>
+              <figcaption>
+                <div class="h4">{{ item.title }}</div>
+                <p>{{ item.category }}</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,0 +1,18 @@
+<div class="section" id="reference">
+    <div class="container cc-reference">
+      <div class="h4 mb-4 text-center title">References</div>
+      <div class="card" *ngFor="let reference of references">
+        <div class="row">
+          <div class="col-lg-2 col-md-3 cc-reference-header">
+            <img [src]="reference.image" alt="Reference Image">
+            <div class="h5 pt-2">{{ reference.name }}</div>
+            <p class="category">{{ reference.position }}</p>
+          </div>
+          <div class="col-lg-10 col-md-9">
+            <p>{{ reference.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
