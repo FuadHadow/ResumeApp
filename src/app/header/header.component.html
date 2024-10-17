@@ -1,23 +1,16 @@
-<header>
-  <div class="container">
-    <div class="row">
-    <div class="profile-page sidebar-collapse">
-      <nav class="navbar navbar-expand-lg fixed-top navbar-transparent bg-primary">
-        <div class="container">
-          <div class="navbar-translate">
-            <a class="navbar-brand" href="#">{{ name }}</a>
-          </div>
+<div class="profile-page">
+  <div class="page-header page-header-small">
+    <div class="page-header-image" data-parallax="true" style="background-image: url('assets/images/cc-bg-1.jpg');"></div>
+    <div class="container">
+      <div class="content-center">
+        <div class="cc-profile-image">
+          <img src="{{image}}" alt="Fuad"/>
         </div>
-      </nav>
-      <div class="container">
-        <div class="content-center">
-          <div class="cc-profile-image"><img [src]="{image}" alt="Profile Image"></div>
-          <div class="h2 title">{{ name }}</div>
-          <p class="category text-white">{{ role }}</p>
-        </div>
+        <div class="h2 title">{{ name }}</div>
+        <p class="category text-white">{{ role }}</p>
+        <a class="btn btn-primary" href="#contact">Hire Me</a>
+        <a class="btn btn-primary" href="#">Download CV</a>
       </div>
     </div>
-    </div>
   </div>
-  </header>
-  
+</div>
